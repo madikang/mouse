@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <title>Smouse</title>
+    <meta name="description" content="mouse">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+     
+    
+  </head>
+  <body>
+    
+    
+
+  <!-- <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script> 
+  <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script> -->
+    
+    
+    <a-scene fog="type: exponential; density: 0; color: #000000;"
+            animation="property: color; from: #000000; to: #FF0000; mixin: transition"
+            animation__2="property: density; from: 0.15; to: 0.03; mixin: transition"
+
+
+
+
+
+    >
+    
+
+    <a-entity rotation="-90 0" class="environmentGround environment" visible="" scale="1 1 4.81" shadow="cast: false; receive: false"></a-entity>
+    <a-sky radius="200" geometry="" theta-length="110" class="environment" material="shader: gradientshader; topColor: #0d0d0d; bottomColor: #404040" visible=""></a-sky>
+
+    <a-plane id="ground" width="100" height="100" rotation="-90 0" src="https://cdn.glitch.com/e480bd07-7365-4815-a4ad-c3a813223699%2Fdesk%20texture.jpg?v=1571941244366" material="" geometry="width: 800; height: 800" position=""></a-plane>
+
+
+    <a-assets> 
+      <a-asset-item id="mouse" src="https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867"
+                   ></a-asset-item>
+      <a-asset-item id="statuee" src="https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmadi%20head%20model.obj?v=1572378620071"></a-asset-item>
+"
+
+      <a-mixin id="transition" dur="5000" dir="alternate" loop="true" easing="easeInCubic"></a-mixin>
+
+
+    </a-assets>
+        
+    <a-entity id="damouse2" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" rotation="0 -110.1035806169049" scale="0.5 0.5 0.5" position="25.35891 1.38619 -1.20927"></a-entity>
+
+
+ <a-entity id="mouse3" position="10 0.984 -3">
+        <a-entity id="damouse3" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" rotation="0 -124.97183540054976" scale="0.1 0.1 0.1" position="-16.82107 -0.07 -2.09863"></a-entity>
+       <a-light id="inside3" light="type: point" position="11.78358 6.00768 0.07233" rotation="0 0 90" animation="property: color; from: #55FF00; to: #FF00CD; dur: 5000; dir: alternate; loop: NaN" color="rgba(98,236,16,1)"></a-light>
+    </a-entity>
+
+
+
+    <a-entity id="mouse4" position="10 0.984 0">
+        <a-entity id="damouse4" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" rotation="0 -68.46043510900155" scale="0.8 0.8 0.8" position="-53.83521 -0.07 5.33463"></a-entity>
+       <a-light id="inside4" light="type: point; intensity: 0.4" position="17.5 2.2 -19.4" rotation="0 0 90" animation="property: color; from: #00FFFF; to: #FF8000; dur: 6000; delay: 2000; dir: alternate; loop: true" color="rgba(116,209,37,1)"></a-light>
+    </a-entity>
+
+
+    <a-entity id="mouse5" position="10 0.984 0">
+        <a-entity id="damouse5" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" rotation="0 138.87923996176025" scale="0.9 0.9 0.9" position="-25.55341 2.8637 44.90694"></a-entity>
+       <a-light id="inside5" light="type: point; intensity: 0.7" position="17.5 2.2 -19.4" rotation="0 0 90" animation="property: color; from: #00FFFF; to: #FF8000; dur: 6000; delay: 2000; dir: alternate; loop: true" color="rgba(116,209,37,1)"></a-light>
+    </a-entity>
+
+
+    <a-entity id="mouse6" position="-46.17161 0.984 -5.15892">
+        <a-entity id="damouse6" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" rotation="0 138.87923996176025" scale="0.4 0.4 0.4" position="0.55341 2.8637 44.90694"></a-entity>
+       <a-light id="inside6" light="type: point; intensity: 0.7" position="17.5 2.2 -19.4" rotation="0 0 90" animation="property: color; from: #5A00FF; to: #C2FF00; dur: 4000; delay: 3000; dir: alternate; loop: true" color="rgba(148,142,113,1)"></a-light>
+    </a-entity>
+
+      
+     <a-entity id="entire mouse w lights" position="10.04946 0 -13.34109" animation="property: position; from: -1 0 -3; to: 10.5 0 -8; dur: 2000; dir: normal; easing: easeInCubic; loop: NaN" animation__rotate="property: rotation; from: 0 0 0; to: 0 70 0; dur: 2000; dir: normal; easing: easeInCubic; loop: NaN"> 
+      <a-entity id="da mouse">
+          <a-entity obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmouseception.obj?v=1572325452867" scale="0.2 0.2 0.2" position="0 0.984 -10" rotation="0 -90" color="red" shadow="">
+      <!--animation="property: position; from: 0.580 0.84954 -7.87517 to: 0.6 0.8 -2; dur:1000; dir: normal; startEvents: click; easing: easeOutQuad"-->
+           </a-entity>
+      </a-entity>
+      
+     <a-light id="inside" light="type: point; intensity: 0.8" position="-4.09397 3.04665 -10.02627" rotation="0 0 90" animation="property: color; from: #9A00FF; to: #ff0000; dur: 4000; dir: alternate; loop: true" color="rgba(182,0,184,1)">
+      </a-light>
+
+      <a-entity id="top" light="type: point; color: #ffffff; intensity: 0.34; groundColor: #000000; decay: 0" position="0 13.93551 -10">
+      </a-entity>
+    
+
+<!-- ------------------------------------------------------ -->
+
+<a-entity id="statue">
+  <a-entity obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmadi%20head%20model.obj?v=1572378620071" scale="7 7 7" position="0 0.4 -11" rotation="0 -75.00000000000001" color="pink" animation="property: rotation; from: 0 90 0; to: 0 -75 0; dur: 800; dir: alternate; loop: false; startEvents: mouseenter" animation__2="property: position; from: 0 0.4 -11; to: -6 0.75 -9; dur: 800; dir: alternate; loop: false; startEvents: click"></a-entity>
+&gt;</a-entity>
+
+<a-entity id="invis" position="-2.5 1 -8" animation="property: rotation; from: 0 -20 0; to: 0 40 0; dur: 2000; dir: alternate; loop: true; elasticity: 2000">
+  
+&gt;</a-entity>
+
+
+
+
+
+&gt;</a-entity>
+
+
+<!-- ------------------------------------------------------  -->
+
+
+<a-entity id="giant statue" obj-model="obj: https://cdn.glitch.com/24e41d43-aa40-4977-a283-ecb1a8c67494%2Fmadi%20head%20model.obj?v=1572378620071" scale="500 500 500" position="-5 10 -178" rotation="30 0 0" color="white" visible= "false"
+animation__appear="property: visible; from: false; to: true; delay: 5000; dur: 3000; dir: easeOutCubic; loop: false"></a-entity> 
+
+
+<!-- ------------------------------------------------------  alongpath="curve:#track;loop:true;dur:14000;rotate:true"-->
+
+<a-entity id="jump" position="-3 -7 -7" scale="20 20 20"  position="0 1.6 -5"
+animation__jump="property: position; to: -3 0 -7; dur: 800; dir: alternate; startEvents: mouseenter; easing: easeOutQuad; loop: true">
+ <a-entity id="invisible" position="0.25 0.2 0.5" rotation="0 -140.84">         
+  <a-entity id="head5" position="0 0.2 0.5">
+  
+
+      <a-box id="snout5" position="0 0.6 0.5" width="0.2" height="0.1" depth="0.1" color="#aac0e3" material="" geometry=""></a-box>
+
+      <a-box id="nose5" position="0 0.6 0.45" width="0.05" height="0.05" depth="0.05" color="#30302f" material="" geometry=""></a-box>
+      <a-box id="tongue5" position="0 0.55 0.5" width="0.05" height="0.05" depth="0.05" color="#ed7bad" material="" geometry=""></a-box>
+      <a-box id="doghead5" position="0 0.65 0.7" width="0.35" height="0.35" depth="0.3" color="#4287f5" material="" geometry=""></a-box>
+      <a-box id="leftear5" position="0.2 0.72 0.7" width="0.15" height="0.22" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      <a-box id="rightear5" position="-0.2 0.72 0.7" width="0.15" height="0.22" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      <a-box id="left eye5" position="0.08 0.7 0.55" width="0.05" height="0.05" depth="0.05" color="#30302f" material="" geometry=""></a-box>
+      <a-box id="right eye5" position="-0.08 0.7 0.55" width="0.05" height="0.05" depth="0.05" color="#30302f" material="" geometry=""></a-box>
+   
+    </a-entity>
+      
+    <a-entity id="whole body5"> 
+      <a-box id="body5" position="0 0.5 1.6" width="0.5" height="0.4" depth="0.6" color="#4287f5" material="" geometry=""></a-box>
+      <a-box id="left front leg5" position="0.2 0.3 1.35" width="0.1" height="0.4" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      <a-box id="right front leg5" position="-0.2 0.3 1.35" width="0.1" height="0.4" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      <a-box id="left back leg5" position="0.2 0.3 1.85" width="0.1" height="0.4" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      <a-box id="right back leg5" position="-0.2 0.3 1.85" width="0.1" height="0.4" depth="0.1" color="#123161" material="" geometry=""></a-box>
+      
+      </a-entity>
+      
+      </a-entity>
+
+      </a-entity>
+
+
+
+
+<!------ -->
+
+<a-entity id="giant invisible" position="-23.15505 -3.98478 -5.20744" scale="30 30 30" rotation="0 -27.9 0">
+
+
+
+<a-entity id="invisible" position="2 0.04" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 600; dir: normal; startEvents: mouseenter">
+        
+        
+
+<a-entity id="spin" position="-1.5 0" rotation="0 90">
+      
+  <a-entity id="head4" position="0 0.15 0.5">
+      <a-box id="snout4" position="0 0.6 0.5" width="0.2" height="0.1" depth="0.1" color="#785f54" material="" geometry=""></a-box>
+      <a-box id="nose4" position="0 0.6 0.45" width="0.05" height="0.05" depth="0.05" color="#30302f" material="" geometry=""></a-box>
+      <a-box id="tongue4" position="0 0.55 0.5" width="0.05" height="0.05" depth="0.05" color="#ed7bad" material="" geometry=""></a-box>
+      <a-box id="doghead4" position="0 0.65 0.7" width="0.35" height="0.35" depth="0.3" color="#f0cccf" material="" geometry=""></a-box>
+      <a-box id="leftear4" position="0.2 0.72 0.7" width="0.15" height="0.22" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      <a-box id="rightear4" position="-0.2 0.72 0.7" width="0.15" height="0.22" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      <a-box id="left eye4" position="0.08 0.7 0.53" width="0.05" height="0.05" depth="0.05" color="#30302f" animation="property: scale; from: 1 0.5 -1; to: 1 1 -1; dur: 450; loop: true; dir: alternate" material="" geometry=""></a-box>
+      <a-box id="right eye4" position="-0.08 0.7 0.53" width="0.05" height="0.05" depth="0.05" color="#30302f" animation="property: scale; from: 1 0.5 -1; to: 1 1 -1; dur: 450; loop: true; dir: alternate" material="" geometry=""></a-box>
+   
+    
+    </a-entity>
+      
+      
+    <a-entity id="whole body4"> 
+        
+    
+      <a-box id="body4" position="0 0.5 1.6" width="0.5" height="0.4" depth="0.6" color="#f0cccf" material="" geometry=""></a-box>
+      
+      <a-box id="left front leg4" position="0.2 0.3 1.38" width="0.1" height="0.4" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      <a-box id="right front leg4" position="-0.2 0.3 1.38" width="0.1" height="0.4" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      <a-box id="left back leg4" position="0.2 0.3 1.85" width="0.1" height="0.4" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      <a-box id="right back leg4" position="-0.2 0.3 1.85" width="0.1" height="0.4" depth="0.1" color="#db4d8f" material="" geometry=""></a-box>
+      
+      </a-entity>
+      
+      </a-entity>
+
+    </a-entity>
+
+  </a-entity>
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------ -->
+
+<a-entity id="bone" position="8.5 20 50" rotation="0 20" scale="40 40 40" shadow="true"
+animation="property: position; from: 8.5 800 20; to: 8.5 -3.7 20; dur: 3000; dir: alternate; easing: easeOutCubic; loop: true">
+      <a-box id="middle" position="0 1 -1" width="0.3" height="0.08" depth="0.06" color="#f59369" material="" geometry=""></a-box>
+        <a-box id="left side" position="0.18 1 -1" width="0.1" height="0.1" depth="0.08" color="#f59369" material="" geometry=""></a-box>
+        <a-box id="right side" position="-0.18 1 -1" width="0.1" height="0.1" depth="0.08" color="#f59369" material="" geometry=""></a-box>
+      </a-entity>
+
+
+
+ <!-- ------------------------------------------------------ -->
+
+
+  <a-curve id="track" >
+        <a-curve-point position="0 1 8" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="5 1 6" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>  
+        <a-curve-point position="7 1 0" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="5 1 -5" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="0 1 -7" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="-6 1 -5" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="-8 1 0" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="-6 1 6" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        <a-curve-point position="0 1 8" geometry="height:0.1;width:0.1;depth:0.1" material="color:#ff0000" curve-point="" visible="true"></a-curve-point>
+        </a-curve>
+<a-draw-curve curveref="#track" material="shader: line; color: red;"></a-draw-curve>
+
+
+
+
+      
+      <a-ring id="my-cursor" scale="0.05 0.05 0.05" color="white" material="" geometry="" position="0 1 1" rotation=""></a-ring>
+      
+      <a-camera>
+      <a-cursor></a-cursor>
+      
+      </a-camera>
+      
+      
+</a-scene>
+  </body>
+</html>
